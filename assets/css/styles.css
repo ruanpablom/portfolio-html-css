@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root{
+    --color-primary: #00adfe;
+    --color-secondary: #fd78ff;
+    --bg: #0e0e1e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+    color: var(--color-primary);
+    font-family: "Fira Code", monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.apresentacao{
+    display: flex;
+    gap: 28px;
+}
+
+.apresentacao__saudacao{
+   display: flex;
+   flex-direction: column;
+   
+}
+
+h1, h2, h3{
+    font-weight: 400;
+}
+
+.apresentacao__saudacao h2,.apresentacao__saudacao h3 {
+    color: var(--color-secondary);
+}
+
+.apresentacao__saudacao h1  {
+    color: var(--color-primary);
+}
+
+
+.apresentacao__saudacao__foto{
+    width:250px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50%;
+    background: linear-gradient(to right, var(--color-secondary),var(--color-primary));
+    margin-bottom: 20px;
+}
+
+.apresentacao__sobre{
+    display: flex;
+    width: 615px;
+    align-items: center;
+}
+
+.apresentacao__sobre strong,.apresentacao__sobre span{
+    color:var(--color-secondary);
+    font-size: 24px;
+}
+
+.apresentacao .apresentacao__sobre{
+    font-size: 20px;
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 18px;
+}
+
+.icon{
+    width: 26px;
+    height: 26px;
+}
